@@ -42,12 +42,12 @@ function FeaturedPokemons() {
                 {popularPokemon.map((pokemon)=>(
                     <div key={pokemon.id} className='flex justify-center'>
                         <BackgroundGradient className='flex flex-col rounded-[22px] bg-black/80 dark:bg-zinc-900 overflow-hidden h-full max-w-sm'>
-                            <Link href={`/details/${pokemon.id}`}>
+                            <Link href={`/details?name=${pokemon.name}`}>
                             <div className='p-4 sm:p-6 flex flex-col items-center text-center flex-grow'>
-                                <img className='w-[200px] h-[250px]' src={pokemon.sprites.front_default
+                                <img className='w-[200px] h-[250px]' src={pokemon.sprites.other.home.front_default
 } alt={pokemon.name} />
                                 
-                                <p className='text-3xl pink-text-gradient font-bold'>{pokemon.name}</p>
+                                <p className='text-3xl pink-text-gradient font-bold'>{pokemon.name.toUpperCase()}</p>
                                 
                             </div>
 

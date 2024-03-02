@@ -1,6 +1,7 @@
 "use client";
 
 import { cn } from "@/utils/cn";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 export const InfiniteMovingCards = ({
@@ -100,8 +101,8 @@ export const InfiniteMovingCards = ({
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
               <div className=" relative z-20 flex justify-center items-center">
-                <img className="w-[200px] h-[200px]" src={item.sprites.other.home.front_default} alt={item.name.toUpperCase()} />
-                <p className='text-3xl pink-text-gradient font-bold'>{item.name}</p>
+                <Image className="w-[200px] h-[200px]" src={item.sprites.other.home.front_default} alt={item.name} />
+                <p className='text-3xl pink-text-gradient font-bold'>{item.name.toUpperCase()}</p>
               </div>
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 <span className="flex flex-col gap-1 items-center justify-center">

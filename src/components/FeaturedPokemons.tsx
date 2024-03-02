@@ -5,6 +5,7 @@ import  Pokedex  from 'pokedex-promise-v2'
 import React, { useEffect, useState } from 'react'
 import { Button } from './ui/moving-border'
 import { BackgroundGradient } from './ui/background-gradient'
+import Image from 'next/image'
 
 
 interface Pokemon {
@@ -44,7 +45,7 @@ function FeaturedPokemons() {
                         <BackgroundGradient className='flex flex-col rounded-[22px] bg-black/80 dark:bg-zinc-900 overflow-hidden h-full max-w-sm'>
                             <Link href={`/details?name=${pokemon.name}`}>
                             <div className='p-4 sm:p-6 flex flex-col items-center text-center flex-grow'>
-                                <img className='w-[200px] h-[250px]' src={pokemon.sprites.other.home.front_default
+                                <Image className='w-[200px] h-[250px]' src={pokemon.sprites.other.home.front_default
 } alt={pokemon.name} />
                                 
                                 <p className='text-3xl pink-text-gradient font-bold'>{pokemon.name.toUpperCase()}</p>

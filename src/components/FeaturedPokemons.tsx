@@ -26,7 +26,7 @@ function FeaturedPokemons() {
         pokedex.getPokemonByName(['pikachu','bulbasaur','charizard','squirtle','dragonite','ditto'])
         .then(res=>setPopularPokemon(res))
         .catch(err=>console.log(err))
-    },[])
+    },[pokedex])
 
     console.log(popularPokemon)
   return (

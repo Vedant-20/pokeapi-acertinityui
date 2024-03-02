@@ -42,7 +42,7 @@ function Page() {
         pokedex.getPokemonByName(['pikachu','bulbasaur','charizard','squirtle','dragonite','ditto','raichu','charmander','squirtle','ivysaur','venusaur','charmeleon','blastoise','pidgeot','spearow','ekans','arbok','greninja','unown','wobbuffet','steelix','snubbull','granbull','qwilfish','scizor','shuckle','heracross','snorlax','kingler','gengar','krookodile','dracovish','goodra','infernape','sandslash','nidoking','ninetales','jigglypuff','diglett','psyduck','primeape','growlithe','poliwrath','kadabra','tentacruel','magnemite','gastly','hypno','voltorb','electrode','hitmonlee','rhydon'])
         .then(res=>setPokemons(res))
         .catch(err=>console.log(err))
-    },[])
+    },[pokedex,pokemons])
 
     
 

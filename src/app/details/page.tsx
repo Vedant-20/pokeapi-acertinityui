@@ -61,7 +61,7 @@ function Page() {
         } else {
             console.log('No name query parameter found.');
         }
-    }, [name]);
+    }, [name,getPokemonDetails]);
 
     
     

@@ -54,7 +54,7 @@ function Page() {
         <h1 className="text-3xl md:text-7xl text-center font-sans font-bold mb-8 blue-text-gradient">Explore All Pokemons</h1>
         <div className="flex flex-wrap lg:gap-8 justify-center">
             {pokemons.map((pokemon)=>(
-                <Link href={`/details?name=${pokemon.name}`}>
+                <Link key={pokemon.id} href={`/details?name=${pokemon.name}`}>
                 <CardContainer key={pokemon.id} className="inter-var mybg p-5 rounded-2xl">
                 <CardBody className="bg-transparent relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
                   <CardItem
@@ -90,7 +90,7 @@ function Page() {
                   </CardItem>
                   <div className="flex justify-between items-center mt-20">
                     {pokemon.types.map((e)=>(
-                        <CardItem
+                        <CardItem key={e.type.name}
                         translateZ={20}
                         translateX={-40}
                         as="button"

@@ -36,7 +36,7 @@ interface PokeDetails{
     weight: number;
     
 }
-function page() {
+function Page() {
 
     const [pokemonDetails,setPokemonDetails]=useState<PokeDetails | null>(null)
     
@@ -114,4 +114,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

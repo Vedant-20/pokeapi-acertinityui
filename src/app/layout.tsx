@@ -18,6 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="icon" href="/icon.ico" sizes="any" />
         
         <body className={inter.className}>
         <div className="relative w-full flex items-center justify-center ">

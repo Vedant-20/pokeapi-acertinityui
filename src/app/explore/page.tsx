@@ -31,7 +31,7 @@ interface Pokemon {
     
     
 }
-function page() {
+function Page() {
 
     const [pokemons, setPokemons]=useState<Pokemon[]>([])
     const pokedex=new Pokedex()
@@ -134,7 +134,7 @@ function page() {
   )
 }
 
-export default page
+export default Page
 
 
 

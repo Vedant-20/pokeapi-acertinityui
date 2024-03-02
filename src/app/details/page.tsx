@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useSearchParams } from 'next/navigation'
 
 import  Pokedex  from 'pokedex-promise-v2'
+import React from 'react';
 import { useEffect, useState } from 'react';
 
 type QueryParam = string;
@@ -67,6 +68,7 @@ function Page() {
     
     
   return (
+    <React.Suspense fallback={<div>Loading...</div>}>
     <div className='w-full h-screen'>
         <div className='mt-8'>
             <h1 className='text-3xl orange-text-gradient text-center font-extrabold'>{pokemonDetails?.name.toUpperCase()}</h1>
@@ -112,6 +114,7 @@ function Page() {
         <Meteors/>
         <BackgroundBeams/>
     </div>
+    </React.Suspense>
   )
 }
 

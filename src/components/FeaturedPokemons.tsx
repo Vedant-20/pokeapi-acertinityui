@@ -27,6 +27,7 @@ function FeaturedPokemons() {
         pokedex.getPokemonByName(['pikachu','bulbasaur','charizard','squirtle','dragonite','ditto'])
         .then(res=>setPopularPokemon(res))
         .catch(err=>console.log(err))
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
 
     console.log(popularPokemon)
@@ -45,7 +46,7 @@ function FeaturedPokemons() {
                         <BackgroundGradient className='flex flex-col rounded-[22px] bg-black/80 dark:bg-zinc-900 overflow-hidden h-full max-w-sm'>
                             <Link href={`/details?name=${pokemon.name}`}>
                             <div className='p-4 sm:p-6 flex flex-col items-center text-center flex-grow'>
-                                <Image className='w-[200px] h-[250px]' src={pokemon.sprites.other.home.front_default
+                                <Image width='1000' height='1000' className='w-[200px] h-[250px]' src={pokemon.sprites.other.home.front_default
 } alt={pokemon.name} />
                                 
                                 <p className='text-3xl pink-text-gradient font-bold'>{pokemon.name.toUpperCase()}</p>

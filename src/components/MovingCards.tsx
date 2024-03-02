@@ -23,6 +23,7 @@ function MovingCards() {
         pokedex.getPokemonByName(['greninja','unown','wobbuffet','steelix','snubbull','granbull','qwilfish','scizor','shuckle','heracross','snorlax','raichu','kingler','gengar','krookodile','dracovish','goodra','infernape'])
         .then(res=>setPokemon(res))
         .catch(err=>console.log(err))
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
 
     

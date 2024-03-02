@@ -23,9 +23,10 @@ export const InfiniteMovingCards = ({
 }) => {
   const containerRef = React.useRef<HTMLDivElement>(null);
   const scrollerRef = React.useRef<HTMLUListElement>(null);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+  
   useEffect(() => {
     addAnimation();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   const [start, setStart] = useState(false);
   function addAnimation() {
@@ -101,7 +102,7 @@ export const InfiniteMovingCards = ({
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
               <div className=" relative z-20 flex justify-center items-center">
-                <Image className="w-[200px] h-[200px]" src={item.sprites.other.home.front_default} alt={item.name} />
+                <Image width='1000' height='1000' className="w-[200px] h-[200px]" src={item.sprites.other.home.front_default} alt={item.name} />
                 <p className='text-3xl pink-text-gradient font-bold'>{item.name.toUpperCase()}</p>
               </div>
               <div className="relative z-20 mt-6 flex flex-row items-center">

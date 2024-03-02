@@ -61,6 +61,7 @@ function Page() {
         } else {
             console.log('No name query parameter found.');
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [name]);
 
     

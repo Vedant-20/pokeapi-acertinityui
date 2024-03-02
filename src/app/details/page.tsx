@@ -77,19 +77,19 @@ function page() {
         </div>
         
 
-        <div className='flex flex-col justify-center items-center mt-10'>
-            <p><span className='pink-text-gradient text-lg font-bold'>Height :   </span> <span className='blue-text-gradient text-lg font-bold'>  {pokemonDetails?.height}</span></p>
+        <div className='flex mybg flex-col justify-center items-start lg:items-center  mt-10'>
+            <p><span className='pink-text-gradient  text-lg font-bold'>Height :   </span> <span className='blue-text-gradient text-lg font-bold'>  {pokemonDetails?.height}</span></p>
             <p><span className='pink-text-gradient text-lg font-bold'>Weight :   </span> <span className='blue-text-gradient text-lg font-bold'>  {pokemonDetails?.weight}</span></p>
             <p><span className='pink-text-gradient text-lg font-bold'>Base Experience :   </span> <span className='blue-text-gradient text-lg font-bold'>  {pokemonDetails?.base_experience}</span></p>
             <div >
             <p><span className='pink-text-gradient text-lg font-bold'>Held Items :   </span>
                 {pokemonDetails?.held_items?.map((e)=>(
-                     <span className='blue-text-gradient text-lg font-bold'>  {e?.item?.name}</span>
+                     <span className='blue-text-gradient text-lg font-bold' key={e?.item.name}>  {e?.item?.name}</span>
                 ))}
             </p>  
             <p><span className='pink-text-gradient text-lg font-bold'>Type :   </span>
                 {pokemonDetails?.types?.map((e)=>(
-                     <span className='blue-text-gradient text-lg font-bold'>  {e?.type?.name}</span>
+                     <span className='blue-text-gradient text-lg font-bold' key={e?.type?.name}>  {e?.type?.name}</span>
                 ))}
             </p>  
 
@@ -98,7 +98,7 @@ function page() {
             <div>
                 <h1 className='text-2xl font-bold orange-text-gradient'>Stats :</h1>
                 {pokemonDetails?.stats?.map((e)=>(
-            <p><span className='pink-text-gradient text-lg font-bold'>{e?.stat?.name}  :  </span>
+            <p key={e?.stat?.name}><span className='pink-text-gradient text-lg font-bold' >{e?.stat?.name}  :  </span>
                 
                      <span className='blue-text-gradient text-lg font-bold'>  {e?.base_stat}</span>
                      </p>

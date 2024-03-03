@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center" id="title">Pokemon Finder</h1>
 
-## Getting Started
+<p align="center"><img src="https://socialify.git.ci/Vedant-20/pokeapi-acertinityui/image?font=Source%20Code%20Pro&amp;forks=1&amp;issues=1&amp;language=1&amp;name=1&amp;owner=1&amp;pattern=Brick%20Wall&amp;pulls=1&amp;stargazers=1&amp;theme=Dark" alt="project-image"></p>
 
-First, run the development server:
+<p id="description">Pokemon Finder is a web app built with Next.js TailwindCss and AcertinityUi. Here You can Search for the most Popular Pokemons or explore a variety of pokemons with modern and stylish UI. I have used PokeApi for Pokemon data.</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<h2>Project Screenshots:</h2>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<img src="https://github.com/Vedant-20/pokeapi-acertinityui/assets/91717779/18d9f8b0-d556-4129-897d-a3a8d3c83d25" alt="project-screenshot" width="500" height="500/">
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<img src="https://github.com/Vedant-20/pokeapi-acertinityui/assets/91717779/8e800c06-e313-460d-944c-05d843b45747" alt="project-screenshot" width="500" height="500/">
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<img src="https://github.com/Vedant-20/pokeapi-acertinityui/assets/91717779/54be7390-6941-402f-bf88-71bd35e9cb96" alt="project-screenshot" width="500" height="500/">
 
-## Learn More
+<img src="https://github.com/Vedant-20/pokeapi-acertinityui/assets/91717779/08afd003-79a5-404c-844b-40c58063bab5" alt="project-screenshot" width="500" height="500/">
 
-To learn more about Next.js, take a look at the following resources:
+  
+  
+<h2>💻 Built with</h2>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Technologies used in the project:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+*   Next.Js
+*   TailwindCss
+*   AceternityUI
+*   PokeApi

@@ -67,7 +67,7 @@ function PokemonDetailsPage() {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [name]);
   return (
-    <div className='w-full h-screen'>
+    <div className='w-full h-screen relative m-auto overflow-hidden'>
         <div className='mt-8'>
             <h1 className='text-3xl orange-text-gradient text-center font-extrabold'>{pokemonDetails?.name.toUpperCase()}</h1>
         </div>
@@ -78,7 +78,7 @@ function PokemonDetailsPage() {
         </div>
         
 
-        <div className='flex mybg flex-col justify-center items-start lg:items-center  mt-10'>
+        <div className='flex mybg flex-col justify-center items-start lg:items-center mt-10'>
             <p><span className='pink-text-gradient  text-lg font-bold'>Height :   </span> <span className='blue-text-gradient text-lg font-bold'>  {pokemonDetails?.height}</span></p>
             <p><span className='pink-text-gradient text-lg font-bold'>Weight :   </span> <span className='blue-text-gradient text-lg font-bold'>  {pokemonDetails?.weight}</span></p>
             <p><span className='pink-text-gradient text-lg font-bold'>Base Experience :   </span> <span className='blue-text-gradient text-lg font-bold'>  {pokemonDetails?.base_experience}</span></p>

@@ -51,8 +51,8 @@ function Page() {
 
   return (
     
-    <div className="min-h-screen py-12 pt-36">
-        <h1 className="text-3xl md:text-7xl text-center font-sans font-bold mb-8 blue-text-gradient">Explore All Pokemons</h1>
+    <div className="min-h-screen py-12 pt-36 overflow-hidden">
+        <h1 className="text-2xl md:text-7xl text-center font-sans font-bold mb-8 blue-text-gradient">Please Wait Pokemons Will Appear Here</h1>
         <div className="flex flex-wrap lg:gap-8 justify-center">
             {pokemons.map((pokemon)=>(
                 <Link key={pokemon.id} href={`/details?name=${pokemon.name}`}>

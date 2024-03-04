@@ -12,6 +12,7 @@ export default function Home() {
       <BackgroundBeams/>
       <FeaturedPokemons/>
       <MovingCards/>
+      
     </main>
   );
 }
